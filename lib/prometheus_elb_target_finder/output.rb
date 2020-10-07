@@ -14,8 +14,8 @@ module PrometheusElbTargetFinder
           targets: targets(9393),
           labels: {
             exporter: 'puma',
-            app: 'truck',
-            environment: 'production',
+            app: 'loop',
+            environment: 'uat',
             target: 'ecs'
           }
         },
@@ -23,8 +23,8 @@ module PrometheusElbTargetFinder
           targets: targets(9394),
           labels: {
             exporter: 'rails',
-            app: 'truck',
-            environment: 'production',
+            app: 'loop',
+            environment: 'uat',
             target: 'ecs'
           }
         },
@@ -32,8 +32,8 @@ module PrometheusElbTargetFinder
           targets: targets(9100),
           labels: {
             exporter: 'node',
-            app: 'truck',
-            environment: 'production',
+            app: 'loop',
+            environment: 'uat',
             target: 'ecs'
           }
         }

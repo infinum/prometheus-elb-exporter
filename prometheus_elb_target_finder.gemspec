@@ -35,6 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec'
 
   spec.add_dependency 'aws-sdk-elasticloadbalancingv2'
+  spec.add_dependency 'aws-sdk-ec2'
   spec.add_dependency 'clockwork'
   spec.add_dependency 'dotenv'
 end
