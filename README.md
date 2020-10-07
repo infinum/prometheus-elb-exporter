@@ -23,6 +23,10 @@ Run it once:
 
 Or install it as a systemd
 
+## EC2 finders
+
+Please use code in `feature/ec2` branch.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. 
