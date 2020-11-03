@@ -5,7 +5,7 @@ module PrometheusElbTargetFinder
         thd.target.id
       end
       response = ec2_client.describe_instances(instance_ids: ids)
-      response.reservations.first.instances.map(&:private_ip_address)
+      response.reservations.flat_map(&:instances).map(&:private_ip_address)
     end
 
     def response
