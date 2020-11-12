@@ -5,7 +5,8 @@ module PrometheusElbTargetFinder
     end
 
     def create_file
-      File.open(file_path, "w") { |f| f.write(target_hash.to_json) }
+       File.open("#{file_path}.tmp", "w") { |f| f.write(target_hash.to_json) }
+       FileUtils.mv("#{file_path}.tmp", file_path)
     end
 
     def target_hash # rubocop:disable Metrics/MethodLength
