@@ -37,7 +37,7 @@ GEM
     dotenv (2.7.5)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     method_source (1.0.0)
     minitest (5.14.0)
     pry (0.13.0)
